@@ -94,6 +94,10 @@ export default ({ mode }) =>
     server: {
       port: "3000",
       open: true,
+      hmr: {
+        // 完全禁用 overlay 错误覆盖层
+        overlay: false,
+      }
     },
     resolve: {
       alias: [
